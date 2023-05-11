@@ -13,9 +13,8 @@ builds:
       - linux
       - windows
       - darwin
-  - flags:
-      - --testingTest={{ .ENV.TESTINGTEST }}"
-
+    flags:
+      - TESTINGTEST =" {{ .ENV.TESTINGTEST }} "
 archives:
   - format: tar.gz
     # this name template makes the OS and Arch compatible with the results of uname.
