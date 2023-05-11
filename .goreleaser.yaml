@@ -13,6 +13,8 @@ builds:
       - linux
       - windows
       - darwin
+  - flags:
+      - --testingTest={{.ENV.testingTest}}"
 
 archives:
   - format: tar.gz
