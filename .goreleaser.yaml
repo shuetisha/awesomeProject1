@@ -9,12 +9,11 @@ before:
 builds:
   - env:
       - CGO_ENABLED=0
+      - TESTING_TEST = {{ .Env.TESTING_TEST }}
     goos:
       - linux
       - windows
       - darwin
-    flags:
-      - --testingTest =" {{ .Env.TESTING_TEST }} "
 archives:
   - format: tar.gz
     # this name template makes the OS and Arch compatible with the results of uname.
