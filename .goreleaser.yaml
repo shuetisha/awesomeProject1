@@ -18,6 +18,7 @@ builds:
 dockers:
   - image_templates:
       - shuetisha/test
+    dockerfile: Dockerfile
 archives:
   - format: tar.gz
     # this name template makes the OS and Arch compatible with the results of uname.
