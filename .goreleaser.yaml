@@ -15,6 +15,9 @@ builds:
       - darwin
     ldflags:
       - -s -w -X config.Version={{.Version}}
+dockers:
+  - image_templates:
+      - shuetisha/test
 archives:
   - format: tar.gz
     # this name template makes the OS and Arch compatible with the results of uname.
