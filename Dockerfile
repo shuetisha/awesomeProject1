@@ -1,3 +1,4 @@
 FROM alpine:latest
-ENTRYPOINT ["/usr/bin/resmo-db-mapper"]
-COPY resmo-db-mapper /usr/bin
+COPY awesomeProject1 /awesomeProject1/awesomeProject1
+WORKDIR "/awesomeProject1"
+ENTRYPOINT ["/awesomeProject1/awesomeProject1"]
