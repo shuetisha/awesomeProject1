@@ -1,5 +1,6 @@
 package config
 
 type Testing struct {
-	Test string
+	Test    string
+	Version string
 }

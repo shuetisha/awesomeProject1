@@ -2,6 +2,7 @@ package main
 
 import (
 	"awesomeProject1/config"
+	"fmt"
 	"os"
 )
 
@@ -18,4 +19,6 @@ func main() {
 	println(config.Test)
 
 	println("app version is: %s", version)
+
+	fmt.Println("config version: ", config.Version)
 }
