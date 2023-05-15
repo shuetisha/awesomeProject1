@@ -1,3 +1,3 @@
 FROM alpine:latest
 ENTRYPOINT ["/usr/bin/resmo-db-mapper"]
-COPY pscale /usr/bin
+COPY resmo-db-mapper /usr/bin
