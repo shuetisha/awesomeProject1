@@ -15,7 +15,6 @@ builds:
       - darwin
     ldflags:
       - -s -w -X config.Version={{.Version}}
-      - ./usemsan=-msan
 archives:
   - format: tar.gz
     # this name template makes the OS and Arch compatible with the results of uname.
